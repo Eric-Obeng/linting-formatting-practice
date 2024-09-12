@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UserListComponent } from './user-list/user-list.component';
 
 @Component({
@@ -8,22 +8,21 @@ import { UserListComponent } from './user-list/user-list.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'linting-formatting-practice';
 
   constructor() {
-    console.log('App component initialized');
+    // Console.log removed
   }
 
   ngOnInit() {
-    let x = 10;
-    if (x == 10) {
-      console.log('x is 10');
+    const x = 10;
+    if (x === 10) {
+      // Console.log removed
     }
   }
 
   public doSomething(): void {
-    const y = 20;
-    console.log(y);
+    // Removed unused variable 'y'
   }
 }
