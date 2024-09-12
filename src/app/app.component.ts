@@ -1,7 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { UserListComponent } from './user-list/user-list.component';
+import { SampleComponent } from './sample/sample.component';
 
 @Component({
+  standalone: true,
   selector: 'app-root',
+  imports: [UserListComponent, SampleComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })

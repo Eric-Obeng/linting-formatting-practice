@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:linting-formatting-practice": "node dist/linting-formatting-practice/server/server.mjs",
-    "lint": "ng lint --ignore-pattern '*.spec.ts'",
+    "lint": "ng lint",
     "prepare": "husky install",
     "format": "prettier --write \"src/**/*.{ts,html,scss,css,json,md}\"",
     "lint:fix": "ng lint --fix",
