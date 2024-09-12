@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 
 @Component({
+  standalone: true,
   selector: 'app-user-list',
   template: `
     <ul>
@@ -14,7 +15,7 @@ import { UserService } from '../user.service';
   `]
 })
 export class UserListComponent implements OnInit {
-  users: any[];
+  users!: any[];
 
   constructor(private userService: UserService) {}
 

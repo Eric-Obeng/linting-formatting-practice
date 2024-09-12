@@ -12,7 +12,7 @@ export class UserService {
     return this.users;
   }
 
-  addUser(user) {
+  addUser(user: any) {
     this.users.push(user);
   }
 }
