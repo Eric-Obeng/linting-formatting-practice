@@ -1,0 +1,16 @@
+# Ignore configuration files
+angular.json
+package-lock.json
+package.json
+tsconfig.app.json
+tsconfig.json
+tsconfig.spec.json
+
+# Ignore node_modules
+node_modules/
+
+# Ignore files already excluded
+*.json
+*.md
+*.scss
+*.css

@@ -3,7 +3,6 @@ import { UserService } from '../user.service';
 import { User } from '../interfaces/user';
 
 @Component({
-  standalone: true,
   selector: 'app-user-list',
   template: `
     <ul>
@@ -23,7 +22,7 @@ import { User } from '../interfaces/user';
   ],
 })
 export class UserListComponent implements OnInit {
-  users: User[] = []; 
+  users: User[] = [];
 
   constructor(private userService: UserService) {}
 
