@@ -14,7 +14,7 @@
       "plugins": ["prettier", "@typescript-eslint"],
       "rules": {
         // configuring prettier
-        "prettier/prettier": "error",
+        "prettier/prettier": ["error", { "endOfLine": "auto" }],
         // rules added
         "prefer-const": "error",
         "object-curly-spacing": ["error", "always"],
