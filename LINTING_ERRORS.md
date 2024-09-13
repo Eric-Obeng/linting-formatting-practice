@@ -12,3 +12,15 @@ This document provides an overview of the initial linting errors encountered in 
   ```bash
   npm run lint:fix
   ```
+
+### Error: 'app-user-list' is not a known element'
+
+- **Description**: This error occurred because the UserListComponent was not declared correctly in the Angular module.
+
+- **Resolution**: Fixed by correctly importing and declaring UserListComponent in the AppComponent and changing UserListComponent and AppComponent to standalone components.
+
+### Error: 'app-sample' is not a known element'
+
+- **Description**: Similar to the previous error, this was due to the SampleComponent not being correctly registered in the Angular module.
+
+- **Resolution**: Corrected by importing SampleComponent to the AppComponent and making the SampleComponent a standalone component.
